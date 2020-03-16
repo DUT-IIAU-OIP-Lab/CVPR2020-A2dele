@@ -1,4 +1,4 @@
-# Deep-Light-Field-Driven-Saliency-Detection-from-A-Single-View
+# A2dele: Adaptive and Attentive Depth Distiller for Efficient RGB-D Salient Object Detection
 ## Introduction
 Accepted paper in CVPR2020, 'A2dele: Adaptive and Attentive Depth Distiller for Efficient RGB-D Salient Object Detection', [Yongri Piao](http://ice.dlut.edu.cn/yrpiao/), Zhengkun Rong, Miao Zhang, Weisong Ren and [Huchuan Lu](http://ice.dlut.edu.cn/lu/publications.html).
 
