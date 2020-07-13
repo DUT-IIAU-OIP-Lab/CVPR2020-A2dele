@@ -191,12 +191,7 @@ class vgg16_RGB(nn.Module):
         x5 = x5 * F.sigmoid(att_5)
         detection_map = self.agg1(x5, x4, x3)
 
-        b,c,h,w = x3.size()
-        F_x3 = x3[:,21,:,:].view(b,1,64,64)
-        F_x4 = x4[:,21,:,:].view(b,1,32,32)
-        F_x5 = x5[:,21,:,:].view(b,1,16,16)
-
-        return self.upsample(detection_map) , self.upsample(F_x3), self.upsample1(F_x4), self.upsample2(F_x5)
+        return self.upsample(detection_map) , self.upsample(att_3), self.upsample1(att_4), self.upsample2(att_5)
 
     def copy_params_from_vgg16_bn(self, vgg16_bn):
         features = [
